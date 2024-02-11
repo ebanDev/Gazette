@@ -1,0 +1,20 @@
+.material-icons {
+  font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+    font-family: 'Material Symbols Outlined';
+}
+
+.filled-icon .material-icons, .filled-icon {
+  font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+}
+
+.tab:not(.tab-active) {
+  display: none;
+}

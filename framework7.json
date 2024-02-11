@@ -1,0 +1,24 @@
+{
+  "cwd": "/tmp/project",
+  "type": [
+    "capacitor"
+  ],
+  "name": "Gazette",
+  "framework": "vue",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": "scss",
+  "theming": {
+    "customColor": true,
+    "color": "#6750A4",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false,
+  "pkg": "org.eu.eban.gazette",
+  "capacitor": {
+    "platforms": [
+      "android"
+    ]
+  }
+}
