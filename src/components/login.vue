@@ -34,6 +34,7 @@
             @input="ent = $event.target.value"
         >
           <option value="toutatice">Toutatice</option>
+          <option value="scpobx">Sciences Po Bordeaux</option>
         </f7-list-input>
       </f7-list>
       <f7-list inset>
