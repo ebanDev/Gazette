@@ -16,17 +16,17 @@ export async function login(apiUrl: string, username: string, password: string, 
     return await request(apiUrl, 'login', { username, password, provider, ent });
 }
 
-export async function search(apiUrl: string, cookies: Object, query: string, searchIn: string = "fullText", dateRange: string = "allTime") {
-    return await request(apiUrl, 'search', { query, searchIn, dateRange, cookies });
+export async function search(apiUrl: string, authData: Object, query: string, searchIn: string = "fullText", dateRange: string = "allTime") {
+    return await request(apiUrl, 'search', { query, searchIn, dateRange, authData });
 }
 
-export async function getArticle(apiUrl: string, cookies: Object, id: string) {
+export async function getArticle(apiUrl: string, authData: Object, id: string) {
     const response = await fetch(`${apiUrl}/article`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ id, cookies })
+        body: JSON.stringify({ id, authData })
     });
 
     return await response.text();

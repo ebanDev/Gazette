@@ -35,6 +35,7 @@ npm install
 ### Vite
 
 There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Vite config located in `vite.config.js`.
+
 ### Capacitor
 
 This project created with Capacitor support. And first thing required before start is to add capacitor platforms, run in terminal:
