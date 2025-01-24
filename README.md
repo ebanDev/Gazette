@@ -35,23 +35,18 @@ A modern web application for reading and managing news articles from Europress, 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/gazette.git
+git clone https://github.com/ebanDev/gazette
 cd gazette
 ```
 
 2. Install dependencies
 ```bash
-npm install
+bun install
 ```
 
-3. Set up your environment variables
+3. Start the development server
 ```bash
-cp .env.example .env
-```
-
-4. Start the development server
-```bash
-npm run dev
+bun run dev
 ```
 
 ## 📦 Project Structure
@@ -76,7 +71,7 @@ The application uses Konsta UI components for a native feel:
 
 ## 📝 License
 
-[MIT License](LICENSE)
+[AGPL 3.0 License](LICENSE)
 
 ## 🤝 Contributing
 
