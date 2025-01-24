@@ -1,75 +1,83 @@
-# Nuxt Minimal Starter
+# 📰 Gazette
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern web application for reading and managing news articles from Europress, built with Vue 3 and Konsta UI. Built on top of [Europresse API](https://github.com/ebanDev/europresse-api).
 
-## Setup
+## 🌟 Features
 
-Make sure to install dependencies:
+- **Article Search**: Advanced search functionality with multiple filters
+  - Search by title or full text
+  - Filter by date ranges (Today, This Week, This Month, All Time)
+  - Real-time search results with loading skeletons
 
+- **Bookmarking System**: Save and manage your favorite articles
+  - Add/remove bookmarks with confirmation dialogs
+  - Persistent storage of bookmarked articles
+  - Quick access to saved articles
+
+- **Clean Reading Experience**
+  - Beautiful typography with Inter and Playfair Display fonts
+  - Responsive design for all devices
+  - Distraction-free reading mode
+
+- **Export Capabilities**
+  - Export articles in various formats
+  - Save articles for offline reading
+
+## 🛠️ Technical Stack
+
+- **Framework**: Vue 3 with TypeScript
+- **UI Framework**: Konsta UI (iOS/Android style components)
+- **Icons**: Tabler Icons
+- **State Management**: Pinia with persistence
+- **Styling**: SCSS & Tailwind CSS
+
+## 🚀 Getting Started
+
+1. Clone the repository
 ```bash
-# npm
+git clone https://github.com/yourusername/gazette.git
+cd gazette
+```
+
+2. Install dependencies
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+3. Set up your environment variables
 ```bash
-# npm
+cp .env.example .env
+```
+
+4. Start the development server
+```bash
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## 📦 Project Structure
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+gazette/
+├── components/          # Reusable Vue components
+│   ├── ArticleViewer   # Article reading component
+│   ├── Search          # Search interface
+├── pages/              # Application pages
+├── stores/             # Pinia stores
+└── utils/              # Utility functions
 ```
 
-Locally preview production build:
+## 🎨 UI Components
 
-```bash
-# npm
-npm run preview
+The application uses Konsta UI components for a native feel:
+- `k-popup` for modals and article viewing
+- `k-navbar` for navigation
+- `k-list` for article listings
+- `k-dialog` for confirmations
 
-# pnpm
-pnpm preview
+## 📝 License
 
-# yarn
-yarn preview
+[MIT License](LICENSE)
 
-# bun
-bun run preview
-```
+## 🤝 Contributing
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Contributions are welcome! Please feel free to submit a Pull Request.
