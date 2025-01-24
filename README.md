@@ -1,47 +1,75 @@
-# 📰 Gazette
+# Nuxt Minimal Starter
 
-## Description
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-A mobile app client for Europresse. It is based on Framework7 and Capacitor and uses [Europresse API](https://github.com/ebanDev/europresse-api).
+## Setup
 
-Home             |  Article | Search | Bookmarks | Settings
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![Home](doc/home.png) |  ![Article](doc/article.png) | ![Search](doc/search.png) | ![Bookmarks](doc/bookmarks.png) | ![Settings](doc/settings.png)
+Make sure to install dependencies:
 
-## Features
-
-- [x] 🆕 See latest articles on home page from RSS feeds
-- [x] 🔍 Search articles
-- [x] 📰 Read article
-- [x] 💾 Save article
-- [x] 📁 Export article
-
-## Development
-
-### Install Dependencies
-
-First of all we need to install dependencies, run in terminal
-```
+```bash
+# npm
 npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-### NPM Scripts
+## Development Server
 
-* 🔥 `start` - run development server
-* 🔧 `dev` - run development server
-* 🔧 `build` - build web app for production
-* 📱 `build-capacitor-android` - build app and copy it to Android capacitor project
+Start the development server on `http://localhost:3000`:
 
-### Vite
+```bash
+# npm
+npm run dev
 
-There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Vite config located in `vite.config.js`.
+# pnpm
+pnpm dev
 
-### Capacitor
+# yarn
+yarn dev
 
-This project created with Capacitor support. And first thing required before start is to add capacitor platforms, run in terminal:
-
+# bun
+bun run dev
 ```
-npx cap add android
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
-Check out [official Capacitor documentation](https://capacitorjs.com) for more examples and usage examples.
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
